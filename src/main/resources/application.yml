@@ -1,0 +1,21 @@
+org:
+  example:
+    ui-automation:
+      browser: chrome
+      screenshot-directory: target/screenshots
+      headless-browser: false
+      test-id-locator-format: data-test-id
+      viewport:
+        width: 1920
+        height: 1080
+      websites-under-test:
+        wikipedia:
+          website-name: Wikipedia
+          base-url: https://www.wikipedia.org/
+          username: n/a
+          password: n/a
+        example-site:
+          website-name: ExampleSite
+          base-url: https://www.example-site.net/
+          username: n/a
+          password: n/a
