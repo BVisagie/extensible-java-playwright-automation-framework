@@ -6,10 +6,9 @@ import org.example.configurations.UiConfig;
 
 @RequiredArgsConstructor
 public class MainLandingPage {
+    public static final String EN_LANGUAGE_TITLE = "English — Wikipedia — The Free Encyclopedia";
     private final PlaywrightActions playwrightActions;
     private final UiConfig uiConfig;
-
-    public static final String EN_LANGUAGE_TITLE = "English — Wikipedia — The Free Encyclopedia";
 
     public boolean checkIfUserIsOnLandingPage() {
         return playwrightActions.getPageSession().url().equals(uiConfig.getCurrentWebSiteUnderTest().getBaseUrl());
